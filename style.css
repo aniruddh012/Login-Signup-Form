@@ -1,0 +1,106 @@
+html {
+    --bgColor: linear-gradient(90deg, rgb(201, 20, 201), rgb(245, 9, 146));
+    --fgColor: linear-gradient(90deg, rgb(245, 9, 146), rgb(201, 20, 201));
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(tower.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background: var(--bgColor);
+}
+
+.container {
+    margin: auto;
+    margin-top: 10vh;
+    box-shadow: 0.1px 0.1px 5px 1px rgba(0, 0, 0, 0.315),
+        -0.1px -0.1px 5px 1px rgba(0, 0, 0, 0.315);
+    border-radius: 3px;
+    background-color: white;
+    width: 27vw;
+    height: 70vh;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.btnUp {
+    margin: auto;
+    width: 11vw;
+    height: 5.5vh;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    border-radius: 2px;
+    background-color: white;
+}
+
+.fg {
+    color: white;
+    background: var(--bgColor);
+}
+
+.fg:hover {
+    background: var(--fgColor);
+}
+
+.inp {
+    outline: none;
+    height: 5vh;
+    width: 21.3vw;
+    margin-top: 3vh;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    border-radius: 2px;
+    background-color: white;
+    padding-left: 1vw;
+}
+
+.forgot {
+    color: rgb(250, 4, 217);
+}
+
+.btn {
+    color: white;
+    cursor: pointer;
+    outline: none;
+    height: 6vh;
+    width: 22.8vw;
+    margin-top: 2vh;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    border-radius: 2px;
+    background: var(--bgColor);
+}
+
+.btn:hover {
+    background: var(--fgColor);
+}
+
+.member {
+    margin-top: 4vh;
+}
+
+
+@media only screen and (max-width:1024px) {
+    .container {
+        width: 90vw;
+        height: 80vh;
+    }
+
+    .btnUp {
+        width: 40vw;
+    }
+
+    .inp {
+        width: 80vw;
+    }
+
+    .btn {
+        width: 80vw;
+    }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Signup Portal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login | Signup</h1>
+        <button class="btnUp fg" onclick="lChange()" id="logBtn"><b>Login</b></button>
+        <button class="btnUp" onclick="sChange()" id="signBtn"><b>Signup</b></button><br>
+        <input type="email" class="inp" id="email" placeholder="Email Address"><br>
+        <input type="password" class="inp" id="password" placeholder="Password"><br>
+        <p class="forget"><a href="#" onclick="forgot()" class="forgot">Forgot password?</a></p>
+        <span><button class="btn" id="btn" onclick="login()"><b>Login</b></button></span><br>
+        <p class="member">Not a member? <a href="#" onclick="sChange()" class="forgot">Signup now</a></p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
